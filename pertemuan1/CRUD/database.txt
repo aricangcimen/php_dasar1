@@ -1,0 +1,7 @@
+#Buat Data base dengan nama sendiri yaitu crudPHP
+1.ProductId type data int
+2.ProductName  Varchar
+3.ProductDescription TEXT
+4.productPrice INT
+5.ProductImage TEXT
+buat satu folder dengan nama upload
