@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php 
+session_start();
+
+
+
+
+?>    
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,5 +43,12 @@
 
     </table>
     </form>
+    <?php 
+    if(isset($_SESSION["message"])){
+        echo $_SESSION["message"];
+        unset $_SESSION["message"];
+
+    }
+    ?>
 </body>
 </html>

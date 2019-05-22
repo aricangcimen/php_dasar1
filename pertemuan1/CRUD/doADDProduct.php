@@ -28,4 +28,7 @@ if(isset($_POST["Product Name"])){
 $_SESSION["message"] = $message
 
 }
+
+header("location:insert.php");
+exit();
 ?>
