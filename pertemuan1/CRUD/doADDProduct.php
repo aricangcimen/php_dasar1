@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_POST["Product Name"])){
     include 'connect.php'
     $productName = $_POST["productName"];
@@ -15,9 +16,16 @@ if(isset($_POST["Product Name"])){
         $message = "product Price must be filled";
     }else if (isset($productImage["tap_name"] || $productImage["tap_name"] == " " )){
             $message = "product image must be choosen";
+ }else {
+     $filePath = "upload/".basename($productImage["name"]);
+     move_uploaded_file($productImage["tap_name"] , $filePathfile)
+    $connection->query("INSERT INTO product VALUES (null , "".$productName."" , "".$productDescription."" ,
+    "".$productPrice."" , "" . $productImage ."")");
+    $message = "Sucessfully add new Product ";
+
  }
 
-
+$_SESSION["message"] = $message
 
 }
 ?>
