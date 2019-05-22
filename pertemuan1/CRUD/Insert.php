@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Create Product </h1>
-    <form>
+    <form action = "doADDProduct.php" method = "post" enctype = "multipart/form-data">
     <table>
     <tr>
     <td>Product Name</td>
