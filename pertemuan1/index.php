@@ -8,5 +8,8 @@
 echo "Sandika Galih";
 print "Sandika Galih";
 print_r("Sandika Galih");
-
+echo " Sandika Galih";
+echo true;
+echo false;
+echo "jumat";
 ?>
