@@ -3,6 +3,10 @@
 /* ini komentar banyak baris*/
 // standar output
 // echo , print
-//untuk mencetak isi array
+//untuk mencetak isi array print_r
+//var_dump
+echo "Sandika Galih";
+print "Sandika Galih";
+print_r("Sandika Galih");
 
 ?>
