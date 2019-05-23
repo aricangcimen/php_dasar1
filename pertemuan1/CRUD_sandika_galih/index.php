@@ -2,7 +2,10 @@
 $conn = mysqli_connect("localHost","root", "root","phpdasar");
 $result = mysqli_query($conn , "SELECT * FROM mahasiswa");
 var_dump($result);
-
+if(!result){
+echo mysqli_error($conn);
+// memunculkan errornya
+}
 ?>
 
 
