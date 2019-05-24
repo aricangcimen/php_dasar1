@@ -19,6 +19,8 @@ $mhs2 = mysqli_fetch_array($result);
 var_dump($mhs2[4]);
 $mhs3 = mysqli_fetch_object($result);
 var_dump($mhs -> email);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +30,8 @@ var_dump($mhs -> email);
     <title>Document</title>
 </head>
 <body>
+
+
     
 </body>
 </html>
